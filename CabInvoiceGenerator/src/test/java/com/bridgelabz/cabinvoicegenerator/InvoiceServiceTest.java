@@ -21,4 +21,16 @@ public class InvoiceServiceTest
 		Assert.assertEquals(5, totalFare, 0.0);
 	}
 
+	@Test
+	public void givenMultipleRides_WhenAnalyse_ShouldReturnAggregate()
+	{
+		CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
+		Ride[] rides = { new Ride(2.5, 5), new Ride(0.2, 1) };
+		double fare = cabInvoiceGenerator.calculateFare(rides);
+		Assert.assertEquals(35, fare, 0);
+		
+		
+	}
+	
+	
 }
