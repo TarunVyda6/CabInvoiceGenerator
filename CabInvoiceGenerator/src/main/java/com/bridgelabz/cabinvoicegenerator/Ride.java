@@ -5,8 +5,11 @@ public class Ride
 
 	public final int time;
 	public final double distance;
+	public CabRide cabRideType;
 
-	public Ride(double distance, int time) {
+	public Ride(CabRide cabRideType, double distance, int time)
+	{
+		this.cabRideType = cabRideType;
 		this.distance = distance;
 		this.time = time;
 	}

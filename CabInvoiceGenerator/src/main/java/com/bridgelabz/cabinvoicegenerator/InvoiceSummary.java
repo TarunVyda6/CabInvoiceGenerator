@@ -7,7 +7,8 @@ public class InvoiceSummary
 	private double totalFare;
 	private double avgFarePerRide;
 
-	public InvoiceSummary(int totalRides, double totalFare) {
+	public InvoiceSummary(int totalRides, double totalFare)
+	{
 		super();
 		this.totalRides = totalRides;
 		this.totalFare = totalFare;
