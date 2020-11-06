@@ -8,7 +8,7 @@ public class InvoiceServiceTest
 	CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
 
 	@Test
-	public void givenUserIdAndRides_ForNormaAndPremimum_ShouldReturnInvoiceSummary()
+	public void givenUserIdAndRidesForNormaAndPremimum_WhenAnalyse_ShouldReturnInvoiceSummary()
 	{
 		RideRepository rideRepository = new RideRepository();
 		String userId = "user@id.com";
